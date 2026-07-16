@@ -26,6 +26,9 @@ grade="Fail";
 }
 
 document.getElementById("result").innerHTML=
-"Total = "+total+"<br>Average = "+avg.toFixed(2)+"<br>Grade = "+grade;
+"Total = "+total+
+"<br>Average = "+avg.toFixed(2)+
+"<br>Grade = "+grade+
+"<br>Status = "+status;
 
 }
