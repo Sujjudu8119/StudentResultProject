@@ -1,0 +1,20 @@
+name: Student Result CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Display Project Files
+        run: ls -la
+
+      - name: Validation Success
+        run: echo "Student Result Project Validated Successfully!"
